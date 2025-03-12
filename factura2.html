@@ -1,0 +1,204 @@
+<html xmlns:fe="http://www.facturae.es/Facturae/2009/v3.2/Facturae">
+  <head>
+    <META http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Factura 2</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+            color: #333;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 30px;
+        }
+        .factura-title {
+            color: #0066cc;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .logo {
+            color: #0066cc;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .info-factura {
+            margin-bottom: 30px;
+        }
+        .info-row {
+            display: flex;
+            margin-bottom: 5px;
+        }
+        .info-label {
+            width: 150px;
+            font-weight: normal;
+        }
+        .info-value {
+            width: 250px;
+        }
+        .client-info {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 30px;
+        }
+        .client-column {
+            width: 48%;
+        }
+        .client-title {
+            color: #0066cc;
+            border-bottom: 1px solid #0066cc;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+        .client-row {
+            margin-bottom: 10px;
+        }
+        .client-label {
+            font-weight: normal;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+        }
+        th {
+            color: #0066cc;
+            text-align: left;
+            border-bottom: 1px solid #0066cc;
+            padding: 8px 10px;
+            font-weight: normal;
+        }
+        td {
+            padding: 8px 10px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .text-right {
+            text-align: right;
+        }
+        .totals {
+            width: 300px;
+            margin-left: auto;
+        }
+        .total-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px;
+        }
+        .total-label {
+            color: #0066cc;
+            font-weight: bold;
+        }
+        .total-value {
+            text-align: right;
+            min-width: 100px;
+        }
+        .grand-total {
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .comments {
+            margin-top: 30px;
+        }
+        .comments-title {
+            color: #0066cc;
+            margin-bottom: 10px;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="factura-title">Factura</div>
+      <div class="logo">DECLARANDO</div>
+    </div>
+    <div class="info-factura">
+      <div class="info-row">
+        <div class="info-label">Fecha de factura:</div>
+        <div class="info-value">2010-03-10</div>
+      </div>
+      <div class="info-row">
+        <div class="info-label">Número de factura:</div>
+        <div class="info-value">18</div>
+      </div>
+      <div class="info-row">
+        <div class="info-label">Fecha de vencimiento:</div>
+        <div class="info-value">2010-03-10</div>
+      </div>
+    </div>
+    <div class="client-info">
+      <div class="client-column">
+        <div class="client-title">Company Comp SA</div>
+        <div class="client-row">
+          <div class="client-label">Dirección: C/ Mayour 33 15º E</div>
+        </div>
+        <div class="client-row">
+          <div class="client-label">NIF: A82735122</div>
+        </div>
+        <div class="client-row">
+          <div class="client-label">CP y ciudad: C/ Mayour 33 15º E</div>
+        </div>
+        <div class="client-row">
+          <div class="client-label">Email: facturae@mityc.es</div>
+        </div>
+      </div>
+      <div class="client-column">
+        <div class="client-title">JuanaMauriño</div>
+        <div class="client-row">
+          <div class="client-label">Dirección: Juncal 1315</div>
+        </div>
+        <div class="client-row">
+          <div class="client-label">CIF: 0000000000B</div>
+        </div>
+        <div class="client-row">
+          <div class="client-label">CP y ciudad: 00000 Buenos Aires (Capital Federal,ARG)</div>
+        </div>
+        <div class="client-row">
+          <div class="client-label">tlf: 00547775554</div>
+        </div>
+      </div>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>Descripción</th>
+          <th>Unidades</th>
+          <th>Precio Unitario (€)</th>
+          <th>Precio (€)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="center">Flores</td>
+          <td>1.0</td>
+          <td class="text-right">25.000000 €</td>
+          <td class="text-right">25.000000 €</td>
+        </tr>
+        <tr>
+          <td class="center">Flores</td>
+          <td>1.0</td>
+          <td class="text-right">25.000000 €</td>
+          <td class="text-right">25.000000 €</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="totals">
+      <div class="total-row">
+        <div class="total-label">BASE IMPONIBLE:</div>
+        <div class="total-value">59.75 €</div>
+      </div>
+      <div class="total-row">
+        <div class="total-label">IVA (16.00%) :</div>
+        <div class="total-value">3.38 €</div>
+      </div>
+      <div class="total-row">
+        <div class="total-label">TOTAL:</div>
+        <div class="total-value grand-total">63.13 €</div>
+      </div>
+    </div>
+    <div class="comments">
+      <div class="comments-title">Comentarios:</div>
+      <p>Pago por transferencia: 1234 4312 22 33212341212314</p>
+    </div>
+  </body>
+</html>
